@@ -25,6 +25,16 @@ body {
     transition: .3s;
 }
 
+.menu-title {
+    font-weight: 500;
+}
+.sub-menu {
+    font-weight: 500;
+}
+.sidebar .nav .nav-item.active > .nav-link .menu-title {
+    font-family: "Poppins", serif;
+}
+
 /* Content Area */
 .content-wrapper {
     background: var(--topback);
@@ -94,3 +104,55 @@ select {
     font-size: 16px;
     border-radius: 5px;
 }
+
+.input-checkbox {
+    margin-left: 25px;
+}
+
+/* Start Card Area */
+.card {
+    border-radius: 20px;
+}
+
+/* Card Button */
+.card-body .btn {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.card-body .btn:last-child {
+    margin-bottom: 0;
+}
+
+.card-body .btn span {
+    font-weight: 600;
+}
+
+/* Card Text */
+.card h6 {
+    font-family: "Poppins", serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+.card h4 {
+    font-family: "Poppins", serif;
+    font-size: 17px;
+    font-weight: 600;
+}
+.card p {
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+/* Card Image */
+.card-img-top {
+    padding: 7px;
+    border-radius: 20px 20px 0px 0;
+}
+
+/* End Card Area */
+.card .card-body {
+    padding: 15px;
+}
+

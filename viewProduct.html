@@ -15,6 +15,7 @@
 
     <!-- Custom CSS-->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/productList.css">
 
   </head>
   <body>
@@ -310,10 +311,11 @@
                 </ul>
               </nav>
             </div>
-            <br>
-            
             <div class="row">
-              <h1>View Product</h1>
+              <h1>Product List</h1>
+              <div class="container grid-container mens-fashion-products">
+                <!-- Men's Product Will Add Automatically -->
+            </div>
             </div>
 
           </div>
@@ -339,7 +341,41 @@
     <script src="assets/vendors/js/vendor.bundle.base.js"></script>
     <script src="assets/js/off-canvas.js"></script>
     <script src="assets/js/misc.js"></script>
+    <script src="js/mens.js"></script>
 
+    <script>
+      /*************************************************/
+    /* Add Men's products dynamically Category Page */
+
+    // Select the card container
+    const mens_products = document.querySelector('.mens-fashion-products');
+
+    // Mapping Product Data
+    mens.map(item => {
+        // Create the card element
+        const card = document.createElement("div");
+        card.className = "card";
+                                    
+        // Insert Product data into the card
+        card.innerHTML = `
+            <img src="${item.images}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h6>${item.title}</h6>
+              <h4>ID: ${item.id}</h4>
+              <p>Keyword: product name</p>
+              <p>Main Category: ${item.main_category}</p>
+              <p>Sub Category: ${item.sub_category}</p>
+              <p>Available Quantity: 15</p>
+              <p>Size: S, M, L, XL, XXL</p>
+              <h6>Tk. ${item.price}</h6>
+              <button class="btn btn-dark"><span>Edit</span> <span class="mdi mdi-square-edit-outline"></span></button>
+              <button class="btn btn-dark"><span>Delete</span> <span class="mdi mdi-trash-can-outline"></span></button>
+            </div>`;
+                                    
+        // Insert card into the product container
+        mens_products.appendChild(card); 
+    })
+    </script>
 
   </body>
 </html>
