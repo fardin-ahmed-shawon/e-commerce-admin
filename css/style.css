@@ -156,3 +156,9 @@ select {
     padding: 15px;
 }
 
+/*Accordion*/
+.accordion-button {
+    font-size: 17px;
+    font-weight: 500;
+    font-family: "Poppins", serif;
+}
