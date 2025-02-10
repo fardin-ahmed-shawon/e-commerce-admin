@@ -14,6 +14,7 @@
     <link rel="shortcut icon" href="assets/images/favicon.png" />
 
     <!-- Custom CSS-->
+    <link rel="stylesheet" href="css/form.css">
     <link rel="stylesheet" href="css/style.css">
 
   </head>
@@ -313,9 +314,88 @@
             <br>
             
             <div class="row">
-              <h1>Add Product</h1>
+              <div class="form-container">
+                <h1 class="text-center">Add Product</h1>
+                <div class="content">
+                    <!-- Product Add form -->
+                    <form action="#">
+                      <div class="user-details full-input-box">
+                        <!-- title -->
+                        <div class="input-box">
+                          <span class="details">Product Title</span>
+                          <input type="text" placeholder="Enter your product title" required>
+                        </div>
+                        <!-- price -->
+                        <div class="input-box">
+                          <span class="details">Price</span>
+                          <input type="text" placeholder="Enter your product price" required>
+                        </div>
+                        <!-- Main Category -->
+                        <div class="input-box">
+                          <span class="details">Choose Main Category</span>
+                          <select>
+                            <option value="Mens">Mens</option>
+                            <option value="Womens">Womens</option>
+                          </select>
+                        </div>
+                        <!-- Sub Category -->
+                        <div class="input-box">
+                          <span class="details">Choose Sub Category</span>
+                          <select>
+                            <option value="Shirt">Shirt</option>
+                            <option value="Pant">Pant</option>
+                            <option value="Panjabi">Panjabi</option>
+                          </select>
+                        </div>
+                        <!-- Total Stock -->
+                        <div class="input-box">
+                          <span class="details">Total Stock Amount</span>
+                          <input type="text" placeholder="Enter your total stock amount" required>
+                        </div>
+                        <!-- keyword -->
+                        <div class="input-box">
+                          <span class="details">Product Keyword</span>
+                          <input type="text" placeholder="Enter your product keyword" required>
+                        </div>
+                        <!-- Description -->
+                        <div class="input-box">
+                          <span class="details">Description</span>
+                          <input type="text" placeholder="Enter your product description" required>
+                        </div>
+                        <!-- main image -->
+                        <div>
+                          <span class="details">Attach Primary Image</span>
+                          <input type="file" name="file1" id="file" class="inputfile"/><br>
+                        </div>
+                        <!-- image 2 -->
+                        <div>
+                          <span class="details">Attach Image 2</span>
+                          <input type="file" name="file2" id="file" class="inputfile"/><br>
+                        </div>
+                        <!-- image 3 -->
+                        <div>
+                          <span class="details">Attach Image 3</span>
+                          <input type="file" name="file3" id="file" class="inputfile"/><br>
+                        </div>
+                        <!-- image 4 -->
+                        <div>
+                          <span class="details">Attach Image 2</span>
+                          <input type="file" name="file4" id="file" class="inputfile"/><br>
+                        </div>
+                        <!-- image 5 -->
+                        <div>
+                          <span class="details">Attach Image 2</span>
+                          <input type="file" name="file5" id="file" class="inputfile"/><br>
+                        </div>
+                      </div>
+                      <!-- Submit button -->
+                      <div class="button">
+                        <input type="submit" value="Add Product">
+                      </div>
+                    </form>
+                </div>
+              </div>
             </div>
-
           </div>
           <!--------------------------->
           <!-- END ADD PRODUCT AREA -->
