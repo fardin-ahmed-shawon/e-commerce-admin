@@ -14,6 +14,7 @@
     <link rel="shortcut icon" href="assets/images/favicon.png" />
 
     <!-- Custom CSS-->
+     <link rel="stylesheet" href="css/form.css">
     <link rel="stylesheet" href="css/style.css">
 
   </head>
@@ -311,9 +312,62 @@
               </nav>
             </div>
             <br>
-            
             <div class="row">
-              <h1>Insert Category</h1>
+              <div class="form-container">
+                <h1 class="text-center">Add Main Category</h1>
+                <div class="content">
+                    <!-- Product Add form -->
+                    <form action="#">
+                      <div class="user-details full-input-box">
+                        <!-- title -->
+                        <div class="input-box">
+                          <span class="details">Main Category Name</span>
+                          <input type="text" placeholder="Enter your category name" required>
+                        </div>
+                        <!-- Description -->
+                        <div class="input-box">
+                          <span class="details">Main Category Description</span>
+                          <input type="text" placeholder="Enter your category description" required>
+                        </div>
+                        <!-- main image -->
+                        <div>
+                          <span class="details">Attach Main Category Poster Image</span>
+                          <input type="file" name="file1" id="file" class="inputfile"/><br>
+                        </div>
+                      </div>
+                      <!-- Submit button -->
+                      <div class="button">
+                        <input type="submit" value="Add Main Category">
+                      </div>
+                    </form>
+                </div>
+                <br><hr>
+                <div class="content">
+                  <h1 class="text-center">Add Sub Category</h1>
+                    <!-- Product Add form -->
+                    <form action="#">
+                      <div class="user-details full-input-box">
+                        <!-- Main Category -->
+                        <div class="input-box">
+                          <span class="details">Choose Main Category</span>
+                          <select>
+                            <option value="Mens">Mens</option>
+                            <option value="Womens">Womens</option>
+                          </select>
+                        </div>
+                        <!-- title -->
+                        <div class="input-box">
+                          <span class="details">Enter Sub Category Name</span>
+                          <input type="text" placeholder="Enter your category name" required>
+                        </div>
+                      </div>
+                      <!-- Submit button -->
+                      <div class="button">
+                        <input type="submit" value="Add Sub Category">
+                      </div>
+                    </form>
+                </div>
+              </div>
             </div>
 
           </div>
