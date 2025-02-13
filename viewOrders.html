@@ -150,10 +150,20 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="viewOrders.html">
+              <a class="nav-link" data-bs-toggle="collapse" href="#order" aria-expanded="false" aria-controls="order">
                 <span class="menu-title">View Orders</span>
-                <i class="mdi mdi-order-bool-ascending menu-icon"></i>
+                <i class="mdi mdi-format-list-bulleted menu-icon"></i>
               </a>
+              <div class="collapse" id="order">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item">
+                    <a class="nav-link" href="pendingOrders.html">Pending Orders</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="viewOrders.html">Active Orders</a>
+                  </li>
+                </ul>
+              </div>
             </li>
 
             <li class="nav-item">
@@ -178,7 +188,7 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <a class="nav-link" href="login.html">
                 <span class="menu-title">Logout</span>
                 <i class="mdi mdi-logout menu-icon"></i>
               </a>
